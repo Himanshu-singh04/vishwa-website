@@ -1914,3 +1914,131 @@ body {
     -webkit-transition-delay: .16s;
     transition-delay: .16s
 }
+
+.team {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 900px;
+    max-width: 75%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .team-members {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-width: 1000px;
+    margin: 0 auto
+  }
+  
+  .team h2 {
+    margin: 0 0 40px 0;
+    font-size: 30px;
+    text-align: center;
+    color: #fff
+  }
+  
+  .team--lockup {
+    position: relative;
+    width: 100%
+  }
+  
+  
+  .member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center
+  }
+  
+  .member--image {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #8F43EE;
+    transition: transform 0.3s ease
+  }
+  
+  .member--image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+  }
+
+  .member--image:hover {
+    transform: scale(1.1)
+  }
+  
+  .member--name {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff
+  }
+  
+  .member--title {
+    margin: 0;
+    font-size: 14px;
+    color: #858585
+  }
+  
+  
+  @media (max-width: 1180px) {
+    .team-members {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 30px;
+      max-width: 800px
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .team-members {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      gap: 25px;
+      max-width: 500px
+    }
+    
+    .member--image {
+      width: 100px;
+      height: 100px
+    }
+    
+    .member--name {
+      font-size: 16px
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .team-members {
+      gap: 20px
+    }
+    
+    .member {
+      width: 140px
+    }
+    
+    .member--image {
+      width: 100px;
+      height: 100px
+    }
+  }
