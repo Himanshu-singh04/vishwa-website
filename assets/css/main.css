@@ -1938,13 +1938,13 @@ body {
   
   .team-members {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     list-style: none;
-    max-width: 1000px;
-    margin: 0 auto
+    max-width: 800px;
+    margin: 0 auto;
   }
   
   .team h2 {
@@ -2003,19 +2003,16 @@ body {
   
   @media (max-width: 1180px) {
     .team-members {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(4, 1fr);
-      gap: 30px;
-      max-width: 800px
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 600px;
     }
   }
   
   @media (max-width: 767px) {
     .team-members {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(6, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       gap: 25px;
-      max-width: 500px
+      max-width: 300px;
     }
     
     .member--image {
